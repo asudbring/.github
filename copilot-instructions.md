@@ -62,3 +62,35 @@ Articles follow learn.microsoft.com frontmatter standards (`ms.service`, `ms.top
 - Update `ms.date` (format: `MM/DD/YYYY`) when modifying articles
 - Scan for sensitive identifiers (GUIDs, IPs, secrets) and replace with approved placeholders
 - Never fabricate Azure service limits, SKU details, or pricing — always verify
+
+## Allen Sudbring owned Azure Network content
+
+- azure-virtual-network
+- azure-nat-gateway
+- azure-traffic-manager
+- azure-dns
+- aks-networking
+- azure-private-link
+
+## All Azure Networking Services folders in repo azure-docs-pr:
+
+- application-gateway
+- bastion
+- cdn
+- dns
+- expressroute
+- firewall
+- firewall-manager
+- frontdoor
+- load-balancer
+- nat-gateway
+- network-watcher
+- networking
+- private-link
+- route-server
+- traffic-manager
+- virtual-network\ip-services
+- virtual-network-manager
+- virtual-wan
+- vpn-gateway
+- web-application-firewall

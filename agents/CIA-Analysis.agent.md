@@ -1,23 +1,13 @@
 ---
-mode: agent
-description: Generate a Customer Incidents Analysis (CIA) report for a given Azure Service Area or Product/Feature
+name: CIA-Analysis
+description: "Generate Customer Incidents Analysis (CIA) reports for Azure service areas, identifying recurring incident patterns, high-impact issue categories, and documentation gaps from public Microsoft sources."
 tools:
-  - microsoft-learn-mcp-server/microsoft_docs_search
-  - microsoft-learn-mcp-server/microsoft_docs_fetch
-  - microsoft-learn-mcp-server/microsoft_code_sample_search
-  - web/fetch
-  - web/githubRepo
-  - read/readFile
-  - read/problems
-  - search/codebase
-  - search/fileSearch
-  - search/textSearch
-  - search/usages
-  - edit/editFiles
-  - edit/createFile
-  - execute/runInTerminal
-  - execute/getTerminalOutput
-  - todo
+  - "microsoft-docs/*"
+  - "readFile"
+  - "editFiles"
+  - "search"
+  - "execute"
+  - "fetch"
 ---
 
 # Customer Incidents Analysis (CIA) Report

@@ -1,0 +1,60 @@
+{
+	"_comment": "Reference MCP configuration for the Azure Networking content developer workspace. Replace ${env:...} variables with your own values via environment variables or a .env file.",
+	"inputs": [],
+	"servers": {
+		"cerebro": {
+			"type": "http",
+			"url": "https://livdhnxdbnhxxxlgcoge.supabase.co/functions/v1/cerebro-mcp",
+			"headers": {
+				"x-brain-key": "${env:CEREBRO_BRAIN_KEY}"
+			}
+		},
+		"context7": {
+			"type": "http",
+			"url": "https://mcp.context7.com/mcp",
+			"headers": {
+				"CONTEXT7_API_KEY": "${env:CONTEXT7_API_KEY}"
+			}
+		},
+		"context-mode": {
+			"type": "stdio",
+			"command": "context-mode"
+		},
+		"microsoft-docs": {
+			"type": "http",
+			"url": "https://learn.microsoft.com/api/mcp",
+			"gallery": true
+		},
+		"github": {
+			"type": "http",
+			"url": "https://api.githubcopilot.com/mcp/"
+		},
+		"ado-content": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"@azure-devops/mcp",
+				"msft-skilling",
+				"--authentication",
+				"azcli"
+			]
+		},
+		"content-developer-assistant": {
+			"_path_comment": "macOS/Linux: Point to your local clone of content-developer-mcp, e.g. /Users/<you>/github/content-developer-mcp/scripts/mcp-proxy-wrapper.js",
+			"type": "stdio",
+			"command": "node",
+			"args": [
+				"${env:CONTENT_DEV_MCP_PATH}/scripts/mcp-proxy-wrapper.js"
+			]
+		},
+		"content-developer-assistant-win": {
+			"_path_comment": "Windows: Point to your local clone of content-developer-mcp, e.g. C:\\github\\content-developer-mcp\\mcp-server\\build\\index.js",
+			"type": "stdio",
+			"command": "node",
+			"args": [
+				"${env:CONTENT_DEV_MCP_PATH}\\mcp-server\\build\\index.js"
+			]
+		}
+	}
+}

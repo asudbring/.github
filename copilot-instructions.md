@@ -42,6 +42,58 @@ Articles follow learn.microsoft.com frontmatter standards (`ms.service`, `ms.top
 - **Context7** — library and SDK documentation lookups
 - **Cerebro** — personal knowledge retrieval
 
+## CLI Tools Available on All Workstations
+
+The following tools are installed and available from the command line on all of Allen's development machines (Windows, macOS, and Linux). Agents and skills can use these tools when executing terminal commands.
+
+### Core Development Tools
+
+| Tool | Command | Purpose |
+|---|---|---|
+| Git | `git` | Version control |
+| Node.js | `node`, `npm`, `npx` | JavaScript runtime and package manager |
+| Bun | `bun` | Fast JavaScript runtime and package manager |
+| Python | `python`, `pip` | Python runtime and package manager |
+| Docker | `docker` | Container management |
+| Terraform | `terraform` | Infrastructure as code |
+| Bicep | `az bicep` | Azure-native IaC |
+
+### Azure & Cloud CLIs
+
+| Tool | Command | Purpose |
+|---|---|---|
+| Azure CLI | `az` | Azure resource management |
+| Azure PowerShell | `Connect-AzAccount`, `Az` module | Azure management via PowerShell |
+| PowerShell | `pwsh` | Cross-platform shell |
+| GitHub CLI | `gh` | GitHub operations (PRs, issues, repos) |
+| GitHub Copilot CLI | `gh copilot` | AI-assisted CLI commands |
+
+### AI-Optimized Dev Tools
+
+| Tool | Command | Purpose |
+|---|---|---|
+| ripgrep | `rg` | Fast grep that respects .gitignore |
+| fd | `fd` | Modern `find` replacement |
+| fzf | `fzf` | Interactive fuzzy finder |
+| DuckDB | `duckdb` | SQL on CSV/Parquet/JSON files |
+| git-delta | `delta` | Better git diff output for AI parsing |
+| xh | `xh` | Structured HTTP client output |
+| watchexec | `watchexec` | Auto-rerun commands on file changes |
+| just | `just` | Simple task runner |
+| semgrep | `semgrep` | Static code analysis |
+
+### NPM Global Packages
+
+| Tool | Command | Purpose |
+|---|---|---|
+| context-mode | `ctx` | Codebase context indexing and search |
+
+### OS-Specific Tools
+
+- **Windows**: `winget`, `choco` (Chocolatey), Windows Terminal, WSL with Ubuntu
+- **macOS**: `brew` (Homebrew), oh-my-zsh
+- **Linux**: Terminator, oh-my-bash, KVM/QEMU (virt-manager), FreeRDP, Flameshot
+
 ## Code and Commands
 
 - Azure CLI: use `az` commands with `--output table` by default

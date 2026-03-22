@@ -6,14 +6,14 @@
 			"type": "http",
 			"url": "https://livdhnxdbnhxxxlgcoge.supabase.co/functions/v1/cerebro-mcp",
 			"headers": {
-				"x-brain-key": "${env:CEREBRO_BRAIN_KEY}"
+				"x-brain-key": "d0e41a7dc5c7718b59522bd254769f7b19419d3f69c3e98e7d4bcaabf0b89964"
 			}
 		},
 		"context7": {
 			"type": "http",
 			"url": "https://mcp.context7.com/mcp",
 			"headers": {
-				"CONTEXT7_API_KEY": "${env:CONTEXT7_API_KEY}"
+				"CONTEXT7_API_KEY": "ctx7sk-65cbb72a-2302-4f4a-89af-86e2a02a48db"
 			}
 		},
 		"context-mode": {
